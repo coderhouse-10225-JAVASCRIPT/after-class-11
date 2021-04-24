@@ -1,6 +1,7 @@
-//let myJQuerySubmit = $("#support > input[type=submit]:nth-child(4)");
-//let myJQueryUl = $("#personas")
-//let myJQueryChat = $('#supportChat');
+// Desde ES6
+import {} from './events/events.js'; // Carga el archivo y ejecuta todo lo que esta ahi adentro
+import UserProfile from './model/user_profile.js';
+import Producto from './model/producto.js';
 
 let myUserProfile = new UserProfile();
 
@@ -63,6 +64,11 @@ for (const elements of all_buttons) {
 ////////////////////////////////////////
 buttonLogin.append("<h2> Hola Coderhouse </h2>");
 
+// Aca busco el elemento <h2> que antes agregue
+// Se que es el primer y unico childen del buton
+// entonces lo remuevo.
+(buttonLogin.children()[0]).remove();
+
 
 // Conozco el parent de myElementP
 //buttonLogin.removeChild(myElementP);
@@ -81,9 +87,6 @@ let personasList = ["HOMERO", "MARGE", "LISA", "BART"];
 
 // Agrego a UL la lista de personas en el array
 for (const persona of personasList) {
-    //let myItemList = document.createElement("li");
-    //myItemList.innerHTML = persona;
-    //myListPersonas.appendChild(myItemList);
     myListPersonas.append("<li>" + persona + "</li>");
 }
 

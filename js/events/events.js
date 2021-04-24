@@ -48,7 +48,9 @@ myNewUserInput.onkeyup =  () => console.log("se dejo presionar tecla")
 let myForm = $("#support");
 let mySupportInput = $("#supportInput");
 let mySupportChat = $("#supportChat");
-myForm.addEventListener("submit", sendChatText);
+
+// Proxima clase vemos eventos con jQuery
+//myForm.addEventListener("submit", sendChatText);
 
 
 function sendChatText(evento){
@@ -66,3 +68,5 @@ function sendChatText(evento){
 
 
 }
+
+export default {}

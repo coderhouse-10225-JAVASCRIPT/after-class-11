@@ -1,4 +1,4 @@
-class Carrito {
+export default class Carrito {
     constructor(){
         this.lista = []
     }

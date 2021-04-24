@@ -1,4 +1,4 @@
-class UserProfile {
+export default class UserProfile {
     constructor(){
         this.darkmode = false;
         this.language = "es";

@@ -1,4 +1,4 @@
-class Producto {
+export default class Producto {
     // constructor(obj) // otra opcion
     constructor(id, marca, precio){
         this.id = id;
