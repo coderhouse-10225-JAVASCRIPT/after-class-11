@@ -11,7 +11,7 @@ export default class Producto {
     }
 
     getHTML() {
-        return "<h1>" + this.marca + ": $" + this.precio +"</h1>" 
+        return "<h1>" + this.marca + ": $" + this.precio +"</h1>"+"<img src='https://www.w3schools.com/images/lamp.jpg'>" 
     }
     
 }
